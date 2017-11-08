@@ -101,7 +101,7 @@ describe('URI Template Handler', () => {
         {
           in: 'query',
           description: 'Tags to filter by',
-          name: 'tag-names[]',
+          name: 'tag-names[user.role]',
           required: true,
           type: 'string',
         },
@@ -109,7 +109,7 @@ describe('URI Template Handler', () => {
 
       it('returns the correct URI', () => {
         const hrefForResource = buildUriTemplate(basePath, href, [], queryParams);
-        expect(hrefForResource).to.equal('/my-api/pet/{unique%2did}{?tag%2dnames%5B%5D}');
+        expect(hrefForResource).to.equal('/my-api/pet/{unique%2did}{?tag-names[user.role]}');
       });
     });
 

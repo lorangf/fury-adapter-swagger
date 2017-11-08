@@ -1,8 +1,9 @@
 import _ from 'lodash';
 
 function escapeUriTemplateVariable(variable) {
-  return encodeURIComponent(variable)
-    .replace(/[-.!~*'()]/g, c => `%${c.charCodeAt(0).toString(16)}`);
+  //  return encodeURIComponent(variable)
+  //    .replace(/[-.!~*'()]/g, c => `%${c.charCodeAt(0).toString(16)}`);
+  return variable;
 }
 
 export default function (basePath, href, pathObjectParams = [], queryParams = []) {
