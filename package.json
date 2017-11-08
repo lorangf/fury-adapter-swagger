@@ -6,7 +6,7 @@
   "tonicExampleFilename": "tonic-example.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/apiaryio/fury-adapter-swagger.git"
+    "url": "https://github.com/lorangf/fury-adapter-swagger.git"
   },
   "scripts": {
     "test": "peasant test",
